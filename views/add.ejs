@@ -1,0 +1,37 @@
+<%- include('header') %>
+
+
+
+
+<div class="main-div">
+    <div class="table-heading">
+        <h1>ADD MEMBERS</h1>
+    </div>
+
+    <div class="members-img">
+
+    </div>
+    
+    <div class="form-container" style="padding-bottom: 3rem;">
+        <form action="/members" method="POST" style="display: flex; flex-direction: column; padding-bottom: 3rem;">
+            <input class="add-members" type="text" name="name" placeholder="Enter Full Name" style="width: 20vw; padding: .7rem 2rem; margin: .5rem; border: none; border-radius: .5rem; box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .25); min-width: 15rem;">
+            <input class="add-members" type="email" name="email" id="" placeholder="Enter your Email" style="width: 20vw; padding: .7rem 2rem; margin: .5rem; border: none; border-radius: .5rem; box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .25); min-width: 15rem;">
+            <input class="add-members" type="text" name="balance" id="" placeholder="Enter current balance" style="width: 20vw; padding: .7rem 2rem; margin: .5rem; border: none; border-radius: .5rem; box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .25); min-width: 15rem;">
+            <input class="add-members" type="text" name="account" placeholder="account-no" style="width: 20vw; padding: .7rem 2rem; margin: .5rem; border: none; border-radius: .5rem; box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .25); min-width: 15rem;">
+            <button class="add-btn" type="submit" style="padding: .7rem 2rem; width: 10vw; text-align: center; border: none; margin-left: .5rem; margin-top: .5rem; cursor: pointer; min-width: 5rem;
+            
+    
+    
+    
+    border-radius: 5px;
+    background-image: radial-gradient( circle 602px at 2.1% 5.1%,  rgba(233,0,120,1) 0%, rgba(0,0,0,1) 90.1% );
+    box-shadow: 0px 2px 10px rgba(63, 15, 15, 0.25);
+    transition: transform .3s ease, background-image .3s ease;
+    cursor: pointer;
+    color: white;
+            ">Add</button>
+        </form> 
+    </div>
+</div>
+
+<%- include('footer') %>

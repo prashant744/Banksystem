@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Muli:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url('images/—Pngtree—wealth\ display\ mobile\ banking\ stocks_3981102.png'), linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+    background-repeat: no-repeat;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 130px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin: 0 130px;
+}
+
+.user-name {
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+}
+
+.nav-items {
+    margin: 20px;
+}
+
+.logo-bank-name {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+} */
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    width: 400px;
+    margin-left: 145px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-content .heading h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+.bank-short-info {
+    width: 400px;
+    margin-left: 145px;
+}
+
+.heading-btn {
+    width: 160px;
+    margin-left: 145px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: radial-gradient( circle 602px at 2.1% 5.1%,  rgba(233,0,120,1) 0%, rgba(0,0,0,1) 90.1% );
+    box-shadow: 0px 2px 20px rgba(63, 15, 15, 0.5);
+    transition: transform .3s ease, background-image .3s ease;
+    cursor: pointer;
+    
+}
+
+.heading-btn:hover {
+    transform: scale(1.1);
+    background-image: radial-gradient( circle 602px at 2.1% 5.1%,  rgb(250, 42, 149) 0%, rgba(0,0,0,1) 90.1% );
+}
+
+.heading-btn .btn a {
+    color: white;
+}
+
+.btn {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.image {
+    background-color: blue;
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    right: 0;
+    background: url('images/—Pngtree—wealth\ display\ mobile\ banking\ stocks_3981102.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(50px, -20px);
+    
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+    margin-left: 10vw;
+   
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: black;
+}
+
+.navbar-links li.balance {
+    display: block;
+    text-decoration: none;
+    margin-left: 20vw;
+    margin-right: 10vw;
+    padding: .8rem 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+.navbar-links li a:hover {
+    color: hotpink;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(202, 5, 104);
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        color: white;
+    }
+
+    .balance {
+        color: white;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .image {
+        background: none;
+        height: 0;
+        width: 0;
+        display: none;
+    }
+
+    .main-content {
+        align-items: center;
+        justify-content: center;
+        position: static;
+        margin-top: 15rem;
+    }
+
+    .heading {
+        margin-left: 0;
+        text-align: center;
+    }
+     
+    .heading-btn {
+        margin-left: 0;
+    }
+
+    .bank-short-info {
+        margin-left: 0;
+        text-align: center;
+    }
+}

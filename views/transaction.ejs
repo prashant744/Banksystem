@@ -1,0 +1,36 @@
+<%- include('header') %>
+
+
+<div class="main-div">
+    <div class="table-heading">
+        <h1>MONEY TRANSFER</h1>
+    </div>
+
+    <div class="members-img">
+
+    </div>
+    
+    <div class="form-container">
+        <form action="/get-started" method="POST">
+            <div class="reciver-label" style="transform: translate(1rem, 1.8rem);">
+                <label for="select" style="color: gray;">Receiver's Name</label>
+            </div>
+            <div class="select-option">
+                <select name="select" id="select">
+                    <% users.forEach(user => { %>
+                        <option value=<%= user._id %>> <%= user.name %> </option>
+                    <% }) %>
+                </select>
+            </div>
+            <div class="amount">
+                <input type="text" name="amount" id="amount" placeholder="Amount">
+            </div>
+            <div class="transaction-btn" style="background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );">
+                <button class="btn-tr" type="submit" style="color: white;">Submit</button>
+            </div>
+        </form> 
+    </div>
+</div>
+
+
+<%- include('footer') %>
